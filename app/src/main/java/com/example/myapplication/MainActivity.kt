@@ -27,25 +27,33 @@ class MainActivity : AppCompatActivity() {
         if (tttt1.text.isEmpty() || !hhhh1.isChecked) {
             color(1)
             value = false
+        }else{
+            color(0)
         }
         if (tttt2.text.isEmpty() || !hhhh2.isChecked) {
             color(2)
             value = false
+        }else{
+            color(0)
         }
         if (tttt3.text.isEmpty() || !hhhh3.isChecked) {
             color(3)
             value = false
+        }else{
+            color(0)
         }
         if (tttt4.text.isEmpty() || !hhhh4.isChecked) {
             color(4)
             value = false
+        }else{
+            color(0)
         }
         return value
     }
 
     fun color(string: Int) {
-        Toast.makeText(this, "Заполните поля", Toast.LENGTH_LONG).show()
         if (string > 0) {
+            Toast.makeText(this, "Заполните поля", Toast.LENGTH_LONG).show()
             Toast.makeText(this, "Красный", Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(this, "Серый", Toast.LENGTH_LONG).show()
